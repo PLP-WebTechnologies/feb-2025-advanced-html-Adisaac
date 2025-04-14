@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <!-- Simple Styling -->
+    <style>
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Introduction -->
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+        <p>We are to Implement HTML5 images, lists, tables, forms and input types. Use form validation attributes. Apply multimedia elements such as audio and video as instructed in the Readme.md file</p>
+    </header>
+    <main>
+        <!-- Ordered List -->
+        <section id="ordered-list">
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Number One</li>
+                <li>Number Two</li>
+                <li>Number Three</li>
+            </ol>
+        </section>
+        
+        <!-- Image -->
+        <section id="external-image-from-pexels">
+            <h2>External Image from pexels.com</h2>
+            <img src="https://images.pexels.com/photos/30694611/pexels-photo-30694611/free-photo-of-scenic-palm-tree-avenue-on-a-sunny-day.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Palm Tree Avenue" width="600" height="400">
+        </section>
+
+        <!-- Table -->
+        <section id="table-of-5-contents">
+            <h2>Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Emails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice English</td>
+                        <td>Morgan Estate</td>
+                        <td>0808080808080</td>
+                        <td>aliceeng@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice France</td>
+                        <td>France Morgan Estate</td>
+                        <td>0808080808080</td>
+                        <td>alicefrance@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Scott</td>
+                        <td>Scotland Morgan Estate</td>
+                        <td>0808080808080</td>
+                        <td>alicescott@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice British</td>
+                        <td>British Morgan Estate</td>
+                        <td>0808080808080</td>
+                        <td>alicebritish@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Germany</td>
+                        <td>Germany Morgan Estate</td>
+                        <td>0808080808080</td>
+                        <td>alicegermany@email.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Emails</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="registration-form">
+            <!-- Form -->
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Name, Email, Password and Date Fields</legend>
+                    <!-- Full Name -->
+                    <fieldset>
+                        <legend>Full Name</legend>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname" placeholder="Input Your First Name" required>
+
+                        <label for="mname">Middle Name:</label>
+                        <input type="text" id="mname" name="mname" placeholder="Input Your Middle Name" required>
+                    </fieldset>
+                    <!-- Email Address -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+                    <!-- Date of Birth -->
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <!-- Password -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter Your Password">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <!-- Dropdown -->
+                    <label for="country">Country:</label>
+                    <select name="country" id="country" required>
+                        <option value="">-- Select Your Country --</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="south-africa">South Africa</option>
+                    </select>
+
+                    <!-- Radio Buttons -->
+                    <label for="gender">Gender:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" id="male" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="female" value="female" required> Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="other" value="other" required> Other
+                        </label>
+                    </div>
+
+                    <!-- Checkboxes -->
+                    <label for="interests">Interests:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="interests" id="sports" value="sports"> Sports
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" id="music" value="music"> Music
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" id="travel" value="travel"> Travel
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+                <!-- Reset Button -->
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+<!-- End of HTML Document -->
+<!-- This HTML document demonstrates the use of advanced HTML5 elements and forms, including ordered lists, images, tables, and various input types. It also includes form validation attributes and multimedia elements as per the assignment requirements. -->
+<!-- The document is structured with sections for each element, and simple styling is applied for better readability. --> 
